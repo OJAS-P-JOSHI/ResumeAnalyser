@@ -1,0 +1,13 @@
+import pymysql
+
+# Establish a connection to the database
+connection = pymysql.connect(host='localhost',
+                             user='root',
+                             password='Stunner79.',  # Replace 'your_password' with your actual password
+                             database='cv')
+
+# Check if the connection is successful
+if connection:
+    print("Connected to the database!")
+else:
+    print("Failed to connect to the database.")
